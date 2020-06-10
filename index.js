@@ -91,7 +91,7 @@ async function execute(message, serverQueue) {
 function skip(message, serverQueue) {
   if (!message.member.voice.channel)
     return message.channel.send(
-      "Necesitas estar en un canal de voz para saltar la cancion!"
+      "Necesitas estar en un canal de voz para saltar canciones!"
     );
   if (!serverQueue)
     return message.channel.send("No hay mas canciones en la cola de reproduccion!");
